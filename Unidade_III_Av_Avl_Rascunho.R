@@ -1,0 +1,16 @@
+# Análise do Custo por Unidade
+Amostra = c(505, 410, 480, 520, 495)
+JackknifeI = c(410, 480, 520, 495)
+JackknifeII = c(505,480, 520, 495)
+JackknifeIII = c(505, 410,520, 495)
+JackknifeIV = c(505, 410, 480, 495)
+JackknifeV = c(505, 410, 480, 520)
+
+#energia = data.frame(Amostra, JackknifeI, JackknifeII, JackknifeIII, JackknifeIV, JackknifeV)
+#head(energia)
+#print("===============================================================================================================")
+#boxplot(energia, main='Boxplot da Energia Gerada', ylab='Milhoes de KWh')
+#summary(energia)
+#print("===============================================================================================================")
+#print(((sd(JackknifeI)+sd(JackknifeII)+sd(JackknifeIII)+sd(JackknifeIV)+sd(JackknifeV))/5)-sd(Amostra))
+print(((1.96^2)*(0.5)*(1-0.5))/(0.05^2))
